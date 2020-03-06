@@ -1,0 +1,23 @@
+{
+  "name": "csv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon index.js",
+    "coverage": "jest --coverage",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "coveralls": "^3.0.9",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "csv-parser": "^2.3.2",
+    "csv-writer": "^1.6.0"
+  }
+}
