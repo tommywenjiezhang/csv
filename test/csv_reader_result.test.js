@@ -5,7 +5,7 @@ const fs = require('fs')
 const csv = require('csv-parser');
 const City = require('../model/city')
 var path = require('path');
-var appDir = path.dirname('/Users/wenjiezhang/Documents/Software/School/csv/index.js');
+var appDir = path.dirname('index.js');
 let result = null
 
 test('return value is created from city', () => {
