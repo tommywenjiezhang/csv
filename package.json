@@ -21,7 +21,7 @@
     "csv-writer": "^1.6.0"
   },
   "repository": {
-  "type": "git",
-  "url": "https://github.com/tommywenjiezhang/csv.git"
-}
+    "type": "git",
+    "url": "https://github.com/tommywenjiezhang/csv.git"
+  }
 }
