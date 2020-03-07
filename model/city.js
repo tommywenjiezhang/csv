@@ -5,6 +5,7 @@ class City {
             this.id = id != undefined? id :null;
             this.city = city != undefined? city :null;
             this.city_ascii = city_ascii != undefined? city_ascii :null;
+            this.country = country != undefined? country :null;
             this.lat = lat != undefined? lat:null;
             this.lng = lng != undefined? lng:null;
             this.iso2 = iso2 != undefined? iso2:null;
@@ -24,14 +25,6 @@ class City {
             this.capital = null;
             this.admin_name = null;
         }
-    }
-    toString(){
-        let string ="{"
-        for (let [key, value] of Object.entries(object1)) {
-            string + `${key}: ${value},`
-        }
-        string += "}"
-        return string;
     }
 }
 module.exports = City;

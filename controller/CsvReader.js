@@ -7,8 +7,6 @@ class CsvReader extends  Reader{
     constructor(file){
         super(file)
         this.output =[];
-        this.append = this.append.bind(this)
-        this.out = this.out.bind(this)
     }
    read(formatClass){
        if(!this.file){
@@ -28,10 +26,10 @@ class CsvReader extends  Reader{
                             while (record = this.read()) {
                                 if(formatClass != null){
                                     let instance = new formatClass(record)
-                                    reader.append(instance)
+                                    reader.output.push(instance)
                                 }
                                 else {
-                                    reader.append(record)
+                                    reader.output.push(record)
                                 }
                             }
                     })
@@ -45,19 +43,6 @@ class CsvReader extends  Reader{
                     }
                 });
        })
-   }
-
-   out(){
-        if(this.output != null && this.output.length > 0 ){
-            return this.output
-        }
-        else{
-            throw new Error("This output does not contain any data")
-        }
-   }
-
-   append(data){
-       super.append(data)
    }
 
 }

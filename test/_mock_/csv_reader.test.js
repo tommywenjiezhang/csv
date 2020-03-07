@@ -11,7 +11,7 @@ const mockAppender = jest.fn();
 
 jest.mock('../../controller/CsvReader',()=>{
     return  jest.fn().mockImplementation(()=> {
-        return {read:mockReader, append:mockAppender}
+        return {read:mockReader}
     })
 })
 

@@ -36,6 +36,13 @@ test("The return passed no file should throw", ()=>{
     expect(() => {cr.read()}).toThrowError("file does not exist")
 })
 
+test("Empty csv should return no data errror", ()=>{
+    let filepath = __dirname + '/fake.csv'
+    let cr  = new CsvReader(filepath);
+    return expect(cr.read(City)).rejects.toThrow('No data');
+})
+
+
 
 
 

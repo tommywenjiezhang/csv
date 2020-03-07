@@ -4,11 +4,6 @@ class Reader
         this.file = file
         this.output = [];
     }
-
-    read(){}
-    append(data){
-        this.output.push(data)
-    }
 }
 
 
