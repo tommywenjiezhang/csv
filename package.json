@@ -19,5 +19,9 @@
   "dependencies": {
     "csv-parser": "^2.3.2",
     "csv-writer": "^1.6.0"
-  }
+  },
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/tommywenjiezhang/csv.git"
+}
 }
